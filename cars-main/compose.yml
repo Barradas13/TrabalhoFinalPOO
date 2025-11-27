@@ -1,0 +1,14 @@
+services:
+  banco_dados:
+    image: mysql:8.0
+    container_name: banco_dados_api
+    environment:
+      MYSQL_ROOT_PASSWORD: aluno
+      MYSQL_DATABASE: banco_dados_api
+    ports:
+      - "33306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:
