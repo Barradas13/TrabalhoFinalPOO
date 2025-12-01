@@ -60,8 +60,7 @@ public class ViagemController {
         foundViagem.setDataHora(viagem.getDataHora());
         foundViagem.setPreco(viagem.getPreco());
         foundViagem.setMotorista(viagem.getMotorista());
-        foundViagem.setPassageiro(viagem.getPassageiro());
-        // Se usar List<Passageiro>: foundViagem.setPassageiros(viagem.getPassageiros());
+        foundViagem.setPassageiros(viagem.getPassageiros());
 
         return viagemRepository.save(foundViagem);
     }
@@ -87,11 +86,8 @@ public class ViagemController {
         foundViagem.setMotorista(Optional.ofNullable(viagem.getMotorista())
                 .orElse(foundViagem.getMotorista()));
 
-        foundViagem.setPassageiro(Optional.ofNullable(viagem.getPassageiro())
-                .orElse(foundViagem.getPassageiro()));
-        // Se usar List<Passageiro>:
-        // foundViagem.setPassageiros(Optional.ofNullable(viagem.getPassageiros())
-        //         .orElse(foundViagem.getPassageiros()));
+        foundViagem.setPassageiros(Optional.ofNullable(viagem.getPassageiros())
+                .orElse(foundViagem.getPassageiros()));
 
         return viagemRepository.save(foundViagem);
     }
