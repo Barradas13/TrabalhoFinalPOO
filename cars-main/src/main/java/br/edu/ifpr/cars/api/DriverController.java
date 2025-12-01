@@ -54,7 +54,7 @@ public class DriverController {
         Driver foundDriver = findDriver(id);
         foundDriver.setName(driver.getName());
         foundDriver.setBirthDate(driver.getBirthDate());
-        foundDriver.setCNH(driver.getCNH());
+        foundDriver.setCnh(driver.getCnh());
         foundDriver.setAnoFabricacao(driver.getAnoFabricacao());
         foundDriver.setComentario(driver.getComentario());
         foundDriver.setPlaca(driver.getPlaca());
@@ -77,8 +77,8 @@ public class DriverController {
             foundDriver.setBirthDate(Optional.ofNullable(driver.getBirthDate())
             .orElse(foundDriver.getBirthDate()));
 
-            foundDriver.setCNH(Optional.ofNullable(driver.getCNH())
-            .orElse(foundDriver.getCNH()));
+            foundDriver.setCnh(Optional.ofNullable(driver.getCnh())
+            .orElse(foundDriver.getCnh()));
             
             foundDriver.setAnoFabricacao(Optional.ofNullable(driver.getAnoFabricacao())
             .orElse(foundDriver.getAnoFabricacao()));

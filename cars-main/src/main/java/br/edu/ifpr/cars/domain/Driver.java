@@ -32,7 +32,7 @@ public class Driver {
     @Placa
     String placa;
     @CNH
-    String CNH;
+    String cnh;
     @AnoFabricacao
     String anoFabricacao;
     @Comentario
