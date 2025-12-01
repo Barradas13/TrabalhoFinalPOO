@@ -4,9 +4,11 @@ services:
     container_name: banco_dados_api
     environment:
       MYSQL_ROOT_PASSWORD: aluno
-      MYSQL_DATABASE: banco_dados_api
+      MYSQL_DATABASE: aluno
+      MYSQL_USER: aluno
+      MYSQL_PASSWORD: aluno
     ports:
-      - "33306:3306"
+      - "3307:3306"
     volumes:
       - mysql_data:/var/lib/mysql
 
